@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(./Images/background.jpg) no-repeat top;
+  background-size: cover;
+  filter: grayscale(100);
+  z-index: -1;
+}
+
+/* Modal Button States */
+
+.modal-buttons{
+  margin: 0; 
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.modal-buttons:hover{
+  background-color: #999999;
+}
+
+/* Left Menu Container */
+
+.leftMenu{
+  width: 260px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 10px 0 10px 0;
+  padding: 20px 15px;
+  border-radius: 0 10px 0 10px;
+  background-color: #333333;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.scrollable-part{
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.scrollable-part h2{
+  color: #fff;
+  margin: 10px 0;
+}
+
+.scrollable-part ul li{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  color: #fff;
+  text-wrap: wrap;
+  line-height: 1;
+}
+
+.scrollable-part ul li img{
+  color: #fff;
+  margin-right: 10px;
+}
+
+.scrollable-part ul li + li{
+  margin-top: 10px;
+}
+
+
+/* Main Container */
+
+.maincontainer {
+  width: 260px;
+  height: 100vh;
+  min-height: 100vh;
+  z-index: 1;
+  flex-grow: 1;
+  margin: 10px auto;
+  padding: 20px 15px;
+  border-radius: 0 10px 0 10px;
+  background-color: #333333;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Playlist Styling */
+
+.spotify-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121212; /* Or any color you prefer for the player background */
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
