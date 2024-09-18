@@ -1,0 +1,16 @@
+{
+    "short_name": "SpotifyClone",
+    "name": "spotify-clone",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "16x16",
+        "type": "image/x-icon"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }
+  
